@@ -5,6 +5,7 @@
 import type {ModuleID, Module, ExtendedModule} from '../types/Stats';
 
 export type ExtendedModulesById = {[key: ModuleID]: ExtendedModule};
+export type ExtendedModulesByName = {[key: string]: ExtendedModule};
 
 export default function getExtendedModulesById(
   modules: Array<Module>,
@@ -26,11 +27,12 @@ export default function getExtendedModulesById(
 
   modules.forEach((module) => {
     module.reasons.forEach((reason) => {
-      // this module was added becuase `reason`.
+      // this module was added because `reason`.
 
       const importer = extendedModulesById[reason.moduleId];
       if (importer) {
         const prefix = importer.identifier.split('!').shift();
+        // TODO add some option to control the list/regexp of async loaders.
         if (prefix.indexOf('promise-loader') >= 0) {
           // This is the thing that was promise-loaded. Skip it.
           return;
@@ -48,6 +50,16 @@ export default function getExtendedModulesById(
   });
 
   return extendedModulesById;
+}
+
+export function getExtendedModulesByName(
+  modules: ExtendedModulesById,
+): ExtendedModulesByName {
+  return Object.keys(modules).reduce((map, id) => {
+    const module = modules[id];
+    map[module.name] = module;
+    return map;
+  }, {});
 }
 
 export function calculateModuleSizes(

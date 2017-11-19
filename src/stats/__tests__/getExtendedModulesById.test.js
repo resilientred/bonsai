@@ -11,6 +11,7 @@ import {
 } from '../../__test_helpers__/defaults';
 
 import getExtendedModulesById, {
+  getExtendedModulesByName,
   calculateModuleSizes
 } from '../getExtendedModulesById';
 
@@ -97,6 +98,21 @@ describe('getExtendedModulesById', () => {
       requirementsCount: 0, // reset value
     }).toEqual(defaultExtendedModule(ENTRY_ZERO));
     expect(modulesById).toMatchSnapshot();
+  });
+
+  it('should convert to a name-module map', () => {
+    const modulesById = getResults(MODULES);
+    const modulesByName = getExtendedModulesByName(modulesById);
+
+    expect(modulesByName).toEqual({
+      'Entry Zero': expect.objectContaining({name: 'Entry Zero'}),
+      'Entry One': expect.objectContaining({name: 'Entry One'}),
+      'Module Zero-A': expect.objectContaining({name: 'Module Zero-A'}),
+      'Module Common': expect.objectContaining({name: 'Module Common'}),
+      'Big Module': expect.objectContaining({name: 'Big Module'}),
+      'Module One-A': expect.objectContaining({name: 'Module One-A'}),
+      'Module One-B': expect.objectContaining({name: 'Module One-B'}),
+    });
   });
 
   it('should have the right fixture sizes', () => {
