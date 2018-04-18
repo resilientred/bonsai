@@ -78,12 +78,12 @@
     global "^4.3.2"
     prop-types "^15.6.1"
 
-"@storybook/addon-storyshots@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.4.0.tgz#cbd83bdc84cdbd71fc49feb25b16d61a73c13be5"
+"@storybook/addon-storyshots@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.4.2.tgz#4bf754c050a535ffbc3d671792a123e481e4bf33"
   dependencies:
-    "@storybook/channels" "3.4.0"
-    "@storybook/node-logger" "3.4.0"
+    "@storybook/channels" "3.4.2"
+    "@storybook/node-logger" "3.4.2"
     babel-runtime "^6.26.0"
     glob "^7.1.2"
     global "^4.3.2"
@@ -107,6 +107,10 @@
 "@storybook/channels@3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.4.0.tgz#0702b8ddfee16aa69da942e18628e563fa7e1be0"
+
+"@storybook/channels@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.4.2.tgz#da26b3116fae1f83ccdb44881537cd9a073aefe9"
 
 "@storybook/client-logger@3.4.0":
   version "3.4.0"
@@ -165,6 +169,12 @@
 "@storybook/node-logger@3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-3.4.0.tgz#ca06884967d98403b7524a424e60d7443c0080d1"
+  dependencies:
+    npmlog "^4.1.2"
+
+"@storybook/node-logger@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-3.4.2.tgz#1b5d909a1ab611b89da68216a81c4b22bf668c36"
   dependencies:
     npmlog "^4.1.2"
 
