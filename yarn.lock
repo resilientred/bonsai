@@ -78,16 +78,16 @@
     global "^4.3.2"
     prop-types "^15.6.1"
 
-"@storybook/addon-storyshots@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.4.0.tgz#cbd83bdc84cdbd71fc49feb25b16d61a73c13be5"
+"@storybook/addon-storyshots@3.4.4":
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storyshots/-/addon-storyshots-3.4.4.tgz#cff74f2d35a424e3a22684fc05b1bcbb3d377b6c"
   dependencies:
-    "@storybook/channels" "3.4.0"
-    "@storybook/node-logger" "3.4.0"
+    "@storybook/channels" "3.4.4"
+    "@storybook/node-logger" "3.4.4"
     babel-runtime "^6.26.0"
     glob "^7.1.2"
     global "^4.3.2"
-    jest-image-snapshot "^2.4.0"
+    jest-image-snapshot "^2.4.1"
     jest-specific-snapshot "^0.5.0"
     puppeteer "^1.2.0"
     read-pkg-up "^3.0.0"
@@ -107,6 +107,10 @@
 "@storybook/channels@3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.4.0.tgz#0702b8ddfee16aa69da942e18628e563fa7e1be0"
+
+"@storybook/channels@3.4.4":
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.4.4.tgz#a0492404d21231dcbe12716707472dd4549fb37a"
 
 "@storybook/client-logger@3.4.0":
   version "3.4.0"
@@ -165,6 +169,12 @@
 "@storybook/node-logger@3.4.0":
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-3.4.0.tgz#ca06884967d98403b7524a424e60d7443c0080d1"
+  dependencies:
+    npmlog "^4.1.2"
+
+"@storybook/node-logger@3.4.4":
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-3.4.4.tgz#f4378e63d3fb6addc76f9a8baaf5be4dae7811f4"
   dependencies:
     npmlog "^4.1.2"
 
@@ -5335,16 +5345,16 @@ jest-haste-map@^20.0.4:
     sane "~1.6.0"
     worker-farm "^1.3.1"
 
-jest-image-snapshot@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/jest-image-snapshot/-/jest-image-snapshot-2.4.0.tgz#72bf8f0815bb0d6d1d7f210f0a470e6e87c8c640"
+jest-image-snapshot@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/jest-image-snapshot/-/jest-image-snapshot-2.4.1.tgz#9da6a86515a9a6fec7c4964b7a6859cd366c6459"
   dependencies:
     chalk "^1.1.3"
     get-stdin "^5.0.1"
     lodash "^4.17.4"
     mkdirp "^0.5.1"
     pixelmatch "^4.0.2"
-    pngjs "^3.3.0"
+    pngjs "^3.3.3"
     rimraf "^2.6.2"
 
 jest-jasmine2@^20.0.4:
@@ -6891,9 +6901,13 @@ pluralize@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
 
-pngjs@^3.0.0, pngjs@^3.3.0:
+pngjs@^3.0.0:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-3.3.2.tgz#097c3c2a75feb223eadddea6bc9f0050cf830bc3"
+
+pngjs@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-3.3.3.tgz#85173703bde3edac8998757b96e5821d0966a21b"
 
 portfinder@^1.0.9:
   version "1.0.13"
